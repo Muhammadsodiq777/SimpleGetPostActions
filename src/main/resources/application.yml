@@ -1,7 +1,7 @@
 spring:
   datasource:
     driverClassName: org.postgresql.Driver
-    url: jdbc:postgresql://dpg-cidaetunqqlb62hvb54g-a.oregon-postgres.render.com/getandpost
+    url: jdbc:postgresql://dpg-cidaetunqqlb62hvb54g-a/getandpost
     username: postgress
     password: We803xCsTAN7k6g1wyv13VP2mOq6fbiO
   jpa:
