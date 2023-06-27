@@ -1,9 +1,9 @@
 spring:
   datasource:
     driverClassName: org.postgresql.Driver
-    url: jdbc:postgresql://mahmud.db.elephantsql.com/hivkkmrc
-    username: hivkkmrc
-    password: AaqspoKm4AUl9LDX2Bq3knf0yk5HXcK8
+    url: jdbc:postgresql://dpg-cidaetunqqlb62hvb54g-a.oregon-postgres.render.com:5432/getandpost
+    username: postgress
+    password: We803xCsTAN7k6g1wyv13VP2mOq6fbiO
     max-active: 3
     ddl-auto: update
   jpa:
