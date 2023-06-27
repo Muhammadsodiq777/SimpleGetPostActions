@@ -1,7 +1,7 @@
 spring:
   datasource:
     driverClassName: org.postgresql.Driver
-    url: jdbc:postgresql://mahmud.db.elephantsql.com/hivkkmrc
+    url: postgres://hivkkmrc:AaqspoKm4AUl9LDX2Bq3knf0yk5HXcK8@mahmud.db.elephantsql.com/hivkkmrc
     username: hivkkmrc
     password: AaqspoKm4AUl9LDX2Bq3knf0yk5HXcK8
     max-active: 3
