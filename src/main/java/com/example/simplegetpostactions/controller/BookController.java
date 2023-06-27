@@ -8,6 +8,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.time.LocalDateTime;
+import java.util.Arrays;
 import java.util.List;
 
 @RestController
@@ -30,7 +32,12 @@ public class BookController {
     @GetMapping("/get/all")
     public ResponseEntity<?> getBookById() {
         try {
-            List<Book> books = service.getAll();
+            List<Book> books = Arrays.asList(
+                    new Book(1L, "No Name", "Me", LocalDateTime.now()),
+                    new Book(2L, "No Named", "Me", LocalDateTime.now()),
+                    new Book(3L, "No Names", "Me", LocalDateTime.now()),
+                    new Book(4L, "No Namer", "Me", LocalDateTime.now()),
+                    new Book(5L, "No Namee", "Me", LocalDateTime.now()));
             return ResponseEntity.ok(books);
         } catch (Exception ex) {
             return ResponseEntity.status(HttpStatus.FORBIDDEN).body(ex.getMessage());
@@ -47,7 +54,7 @@ public class BookController {
         }
     }
 
-    @PutMapping ("/update/book/{id}")
+    @PutMapping("/update/book/{id}")
     public ResponseEntity<?> updateBook(@PathVariable Long id, @RequestBody BookDto dto) {
         try {
             Book book = service.updateBook(id, dto);
@@ -57,7 +64,7 @@ public class BookController {
         }
     }
 
-    @DeleteMapping ("/{id}")
+    @DeleteMapping("/{id}")
     public ResponseEntity<?> delete(@PathVariable Long id) {
         try {
             service.deleteBook(id);
