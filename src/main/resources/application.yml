@@ -1,13 +1,10 @@
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/postgres
-    username: postgres
-    password: 9654
-
+    username: hivkkmrc
+    password: AaqspoKm4AUl9LDX2Bq3knf0yk5HXcK8
+    url: jdbc:postgresql://mahmud.db.elephantsql.com:5432/hivkkmrc
+    driver-class-name: org.postgresql.Driver
 
   jpa:
     hibernate:
       ddl-auto: update
-    show-sql: true
-server:
-  port: 8088

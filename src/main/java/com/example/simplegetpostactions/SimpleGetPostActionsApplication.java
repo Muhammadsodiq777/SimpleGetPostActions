@@ -8,6 +8,7 @@ public class SimpleGetPostActionsApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(SimpleGetPostActionsApplication.class, args);
+        System.out.println("Started!!!");
     }
 
 }
